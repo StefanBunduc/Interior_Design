@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Madison Interior Design Art</title>
+    <!-- Linia adăugată pentru a încărca stilurile CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="contact.jpg" alt="Contact Madison Team"> 
+    </header>
+    <h1>Start Your Design Journey</h1>
+
+    <form action="#" method="POST">
+        <!-- Email Input -->
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- Dropdown with 3 Interior Design Topics (2nd option preselected) -->
+        <div>
+            <label for="topic">Project Type:</label>
+            <select id="topic" name="topic">
+                <option value="residential">Residential Consultation</option>
+                <option value="commercial" selected>Commercial Space Design</option>
+                <option value="custom-furniture">Bespoke Furniture Sourcing</option>
+            </select>
+        </div>
+
+        <!-- Text Area -->
+        <div>
+            <label for="message">Tell us about your space:</label>
+            <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+        </div>
+
+        <!-- Radio Buttons -->
+        <div>
+            <label>Subscribe to newsletter?</label>
+            <input type="radio" id="subscribe-yes" name="subscribe" value="yes">
+            <label for="subscribe-yes">Yes</label>
+            <input type="radio" id="subscribe-no" name="subscribe" value="no" checked>
+            <label for="subscribe-no">No</label>
+        </div>
+
+        <!-- Checkbox -->
+        <div>
+            <input type="checkbox" id="privacy" name="privacy" required>
+            <label for="privacy">I have read and agree to the Privacy Policy</label>
+        </div>
+
+        <!-- Send Button -->
+        <button type="submit">Send</button>
+    </form>
+</body>
